@@ -117,8 +117,8 @@ public class DialogListView extends DialogFragment{
         lv_dialog.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int positon, long l) {
+                //点击对话框的回调
                 if(sDatas!=null&&sDatas.size()>0){
-                    //点击对话框的回调
                     DialogDismissListener listener=(DialogDismissListener)getActivity();
                     listener.dialogDis(sDatas.get(positon));
                     dismiss();
